@@ -776,7 +776,8 @@ button {
   }
 
   .order-inputs {
-    width: 112px;
+    width: 120px;
+    padding: 17px 47px 17px 55px;
   }
 
   .order-btn {
@@ -806,6 +807,7 @@ button {
     padding: 40px 100px 40px 40px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-image: url("../images/calming-chevs-rectangle.webp");
   }
 }
