@@ -1,0 +1,258 @@
+// tablet
+@media (min-width: 481px) {
+  .header-logo {
+    padding: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/logo-bg.webp");
+  }
+
+  .header-nav {
+    padding: 5px 25px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/nav-bg.webp");
+  }
+
+  .header-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .burger-nav {
+    display: none;
+  }
+
+  .order-content-title {
+    margin-top: 40px;
+    width: 370px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .product-descr {
+    width: 400px;
+    color: #f6f7e4;
+  }
+
+  .product-descr-text {
+    font-size: 28px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .descr-list-item {
+    font-size: 22px;
+  }
+
+  .cat-food-pack-img {
+    width: 320px;
+  }
+
+  .cat-on-legs-img {
+    height: 275px;
+  }
+
+  .left-cat-img {
+    left: -40px;
+  }
+
+  .right-cat-img {
+    right: -40px;
+  }
+
+  .order-title {
+    margin-top: 30px;
+  }
+
+  .order-inputs {
+    width: 190px;
+  }
+
+  .order-btn {
+    width: 300px;
+  }
+
+  .countdown {
+    margin-top: 20px;
+  }
+
+  .results-text-container {
+    width: 400px;
+  }
+
+  .results-summary {
+    font-size: 18px;
+  }
+}
+
+// tablet +
+@media (min-width: 581px) {
+  .cat-food-pack-img {
+    width: auto;
+  }
+  .cat-on-legs-img {
+    height: 320px;
+  }
+  .left-cat-img {
+    left: -70px;
+  }
+  .right-cat-img {
+    right: -70px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+}
+
+// tablet ++
+@media (min-width: 768px) {
+  .header-logo {
+    padding: 5px 10px;
+    width: 220px;
+  }
+  .header-nav {
+    padding: 5px 50px;
+  }
+}
+
+// laptop
+@media (min-width: 992px) {
+  .darker-layer {
+    z-index: 0;
+  }
+
+  .header-logo {
+    width: auto;
+  }
+
+  .header-nav {
+    padding: 5px 60px;
+  }
+
+  .header-nav-list {
+    gap: 50px;
+  }
+
+  .order-content,
+  .order-content-title {
+    z-index: 10;
+  }
+
+  .order-content-title {
+    width: 600px;
+    font-size: 52px;
+    color: #f9e994;
+    text-shadow: none;
+  }
+
+  .product-descr {
+    width: 450px;
+  }
+
+  .product-descr-text {
+    text-align: left;
+    line-height: 131%;
+    text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .cat-on-legs-img {
+    height: auto;
+  }
+  .left-cat-img {
+    left: -140px;
+  }
+  .right-cat-img {
+    right: -140px;
+  }
+}
+
+// PC
+@media (min-width: 1200px) {
+  .order-content {
+    margin: 10px auto 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 35px;
+  }
+
+  .product-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-descr-list {
+    padding: 35px 0 35px 70px;
+    width: 253px;
+  }
+
+  .descr-list-item {
+    position: relative;
+    font-size: 22px;
+  }
+
+  .left-cat-img {
+    left: -170px;
+  }
+
+  .right-cat-img {
+    right: -170px;
+  }
+
+  .order-proposition {
+    width: 270px;
+  }
+
+  .order-title {
+    margin-top: 25px;
+  }
+
+  .countdown {
+    margin-top: 15px;
+  }
+
+  .order-inputs {
+    width: 120px;
+    padding: 17px 47px 17px 55px;
+  }
+
+  .order-btn {
+    width: 222px;
+  }
+
+  .about-title {
+    margin-top: 100px;
+  }
+
+  .about-content {
+    margin: 60px auto 100px;
+  }
+
+  .result-title {
+    margin-top: 100px;
+    font-size: 52px;
+  }
+
+  .results-content {
+    margin: 60px auto 200px;
+    gap: 30px;
+  }
+
+  .results-text-container {
+    width: 760px;
+    padding: 40px 100px 40px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/calming-chevs-rectangle.webp");
+  }
+}

@@ -1,0 +1,39 @@
+.section-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/section-3-bg.webp");
+}
+
+.result-title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #537d13;
+}
+
+.results-content {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.results-text-container {
+  margin-top: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 18px;
+  box-sizing: border-box;
+}
+
+.results-summary {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 128%;
+  color: #483c08;
+}

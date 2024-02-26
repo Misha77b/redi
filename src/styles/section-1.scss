@@ -1,0 +1,297 @@
+.section-1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/section-1-bg.webp");
+  box-sizing: border-box;
+}
+
+.darker-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -10;
+}
+
+.section-container {
+  margin: 0 auto;
+  @include flex-dirColumn-center;
+  padding: 15px 20px;
+  max-width: 1200px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 175px;
+}
+
+.header-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+.navigation-active {
+  display: block;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-nav-Link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #715d00;
+  text-decoration: underline;
+}
+
+.header-nav-Link:is(:hover, :focus) {
+  color: #715d00;
+  text-shadow: 1px 1px 0px black;
+}
+
+.burger-nav {
+  @include flex-center-center;
+  width: 26px;
+}
+
+.burger-lines {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: #715d00;
+  border-radius: 5px;
+}
+
+.burger-lines::before,
+.burger-lines::after {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 26px;
+  background: #715d00;
+  border-radius: 5px;
+}
+
+.burger-lines::before {
+  content: "";
+  top: -8px;
+}
+
+.burger-lines::after {
+  content: "";
+  top: 8px;
+}
+
+.burger-lines-active {
+  background: transparent;
+}
+
+.burger-lines-active::before,
+.burger-lines-active::after {
+  width: 23px;
+}
+
+.burger-lines-active::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-lines-active::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.order-content-title {
+  margin-top: 80px;
+  width: 300px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffdd32;
+  text-shadow: 2px 2px 5px black;
+}
+
+.order-content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 20px;
+}
+
+.product-descr {
+  width: 300px;
+  color: #f6f7e4;
+}
+
+.product-descr-text {
+  text-align: center;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+
+.product-descr-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 70px;
+  border-radius: 20px;
+  background: #7fb3e1;
+}
+
+.descr-list-item {
+  position: relative;
+  font-size: 16px;
+}
+
+.descr-list-item::before {
+  position: absolute;
+  content: url("../images/cat-paws.webp");
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px;
+}
+
+.product-images {
+  position: relative;
+  @include flex-center-center;
+}
+
+.cat-food-pack-img {
+  width: 250px;
+}
+
+.cat-on-legs-img {
+  position: absolute;
+  height: 175px;
+  bottom: 0;
+  z-index: 100;
+}
+
+.left-cat-img {
+  left: -10px;
+}
+
+.right-cat-img {
+  right: -10px;
+}
+
+.order-proposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #7eb2e1;
+  border-radius: 20px;
+}
+
+.order-title {
+  margin-top: 23px;
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #483c08;
+}
+
+.countdown {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #f6e791;
+}
+
+.order-price {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.old-price {
+  position: relative;
+  font-size: 30px;
+  color: #6b6b6b;
+}
+
+.old-price::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-bottom: 2px solid #f6be91;
+  transform: skewY(-20deg);
+}
+
+.new-price {
+  font-size: 36px;
+  color: #483c08;
+}
+
+.old-price::after,
+.new-price::after {
+  content: "uah";
+}
+
+.order-form {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0);
+  box-sizing: border-box;
+  gap: 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.order-inputs {
+  width: 150px;
+  padding: 17px 55px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f3efef;
+  background-image: url("../images/cat-paw-input.webp");
+  background-position: 20px 10px;
+  background-repeat: no-repeat;
+}
+
+.order-btn {
+  width: 260px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  background: #a1d337;
+}
+
+.order-date {
+  padding: 10px 0 20px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+}
